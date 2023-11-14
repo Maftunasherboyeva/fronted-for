@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1124px;
+  margin: auto;
+}
+.container nav {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.container nav ul {
+  display: flex;
+  gap: 39px;
+  cursor: pointer;
+}
+label img{
+    display: none;
+}
+input {
+  display: none;
+}
+li {
+  list-style: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3.82;
+  color: #898890;
+  /* padding-bottom: 40px; */
+}
+li:hover{
+    color: #f35c4e;
+}
+.lego{
+    padding-bottom: 40px;
+}
+main .lego img {
+  width: 700px;
+  height: 400px;
+}
+.main {
+  /* display: grid;
+    grid-template-columns: 2fr  1fr ; */
+  display: flex;
+  gap: 30px;
+}
+.main .fff .theme h1 {
+  font-size: 50px;
+  font-family: Inter;
+  font-weight: 800;
+  /* letter-spacing: 5; */
+}
+.fff {
+  display: flex;
+  /* gap: 70px; */
+  justify-content: space-between;
+}
+p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3.82;
+  color: #898890;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+.theme {
+  width: 285px;
+}
+.about {
+  max-width: 399px;
+}
+.about button {
+  padding: 15px 30px;
+  font-family: Inter;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 7.653px;
+  border: none;
+  cursor: pointer;
+  background-color: #f35c4e;
+  color: #fff4ee;
+}
+.new {
+  padding: 30px 25px;
+  background-color: #00001a;
+}
+.new h1 {
+  color: #e8aa4d;
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.new_dron h1 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Inter;
+  color: #fff;
+  padding-top: 30px;
+  line-height: 1.5;
+}
+.chiziq{
+    height: 1px;
+    background-color: #898890;
+}
+.doo {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.all {
+  display: flex;
+  gap: 20px;
+  max-width: 376px;
+}
+.all h2 {
+  font-size: 32px;
+  color: #898890;
+  font-weight: 800;
+  font-family: Inter;
+  padding-bottom: 10px;
+}
+.all h3 {
+  font-size: 22px;
+  color: #030303;
+  font-weight: 600;
+  font-family: Inter;
+  padding-bottom: 20px;
+}
+.all img {
+  width: 156px;
+  height: 200px;
+}
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 55px 50px;
+  }
+  
+  main .lego img {
+    padding-bottom: 30px;
+    width: 640px;
+    height: 430px;
+  }
+  .m {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .fff {
+    flex-direction: column;
+  }
+  .theme {
+    width: 500px;
+  }
+  .main .fff .theme h1 {
+    font-size: 72px;
+    padding-bottom: 25px;
+  }
+  .about {
+    max-width: 680px;
+  }
+  p {
+    font-size: 27px;
+  }
+  .about button {
+    padding: 20px 35px;
+    font-size: 28px;
+  }
+  .new h1 {
+    font-size: 54px;
+  }
+  .new_dron h1 {
+    padding-top: 50px;
+    font-size: 32px;
+  }
+  .new_dron p{
+    padding-bottom: 50px;
+  }
+  .new {
+    padding: 30px 35px;
+  }
+  .doo {
+    flex-direction: column;
+  }
+  .all {
+    max-width: 650px;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .all img {
+    width: 200px;
+    height: 250px;
+  }
+  .all h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  .all h3 {
+    font-size: 32px;
+  }
+  .home {
+    display: none;
+    position: absolute;
+    top: 170px;
+    width: 640px;
+    /* right: 0; */
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff4ee;
+    padding: 50px 220px;
+  }
+  li{
+    font-size: 32px;
+  }
+  input:checked + label+.home {
+    display: block;
+    transition: all 2s;
+  }
+  input:checked + label #close {
+    display: block;
+  }
+  input:checked + label #open {
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+  /* input:checked label #close{
+    display: block;
+  } */
+}
